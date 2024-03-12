@@ -1,9 +1,10 @@
-// CarouselComponent.jsx
 import React from "react";
 import { Paper, Button, Box } from "@mui/material";
-
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import akash from "./Images/akash.jpeg";
 import final from "./Images/final.png";
+import sample1 from "./Images/Sample1.png";
 const Carousel = ({ items }) => {
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = items.length;
@@ -29,7 +30,7 @@ const Carousel = ({ items }) => {
           fontSize: "30px",
         }}
       >
-        {/* <ArrowBackIosNewIcon /> */}
+        <ArrowBackIosIcon />
         Back
       </Button>
       <Paper square elevation={0}>
@@ -45,7 +46,7 @@ const Carousel = ({ items }) => {
         }}
       >
         Next
-        {/* <ArrowForwardIosNewIcon /> */}
+        <ArrowForwardIosIcon />
       </Button>
     </Box>
   );
@@ -56,12 +57,18 @@ const MyCarouselComponent = () => {
     <img
       src={akash}
       alt="Image 1"
-      style={{ width: "900px", height: "400px" }}
+      style={{ width: "696px", height: "261px" }}
     />,
+
     <img
       src={final}
       alt="Image "
-      style={{ width: "900px", height: "400px" }}
+      style={{ width: "696px", height: "261px" }}
+    />,
+    <img
+      src={sample1}
+      alt="sample 1"
+      style={{ width: "696px", height: "261px" }}
     />,
   ];
 

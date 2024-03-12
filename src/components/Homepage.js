@@ -7,15 +7,20 @@ import ChoiceLogo from "./Images/ChoiceLogo.png";
 import QuestionMark from "./Images/QuestionMark.png";
 import { Box, Typography } from "@mui/material";
 import MyCarouselComponent from "./MyCarouselComponent";
-// import Navbar from "./Navbar";
+import text from "./Images/text.svg";
+import Rectangle from "./Images/Rectangle 188 (3).png";
+import contact_us from "./Images/contact_us.png";
+
 const Homepage = () => {
   return (
     <>
       <Box position={"relative"} style={{ margin: "-8px" }}>
-        <img
-          src={BackgroundImage}
-          alt="pic"
-          style={{ width: "100%", height: "3220px" }}
+        <div
+          style={{
+            width: "100%",
+            height: "3220px",
+            background: "#413F42",
+          }}
         />
         <Typography
           style={{
@@ -56,6 +61,32 @@ const Homepage = () => {
           }}
         />
         <img
+          src={Rectangle}
+          alt="pic"
+          style={{
+            width: "403px",
+            height: "273px",
+            position: "absolute",
+            top: "20.6%",
+            left: "83%",
+            transform: "translateX(-50%)",
+          }}
+        />
+        <img
+          src={text}
+          alt="pic"
+          style={{
+            width: "380px",
+            height: "273px",
+            position: "absolute",
+            top: "20.6%",
+            // right: "-5",
+            left: "83%",
+            transform: "translateX(-50%)",
+          }}
+        />
+
+        <img
           src={CuratedStream}
           alt="pic"
           style={{
@@ -70,21 +101,14 @@ const Homepage = () => {
         <Box
           display={"flex"}
           alignItems={"center"}
-          // justifyContent={"center"}
           style={{
             position: "absolute",
-            //   width: "72.36%",
             top: "34.56%",
           }}
         >
           <Typography
             style={{
               marginLeft: "520px",
-              //   position: "absolute",
-              //   width: "72.36%",
-              //   top: "37.85%",
-              //   left: "50%",
-              //   transform: "translateX(-50%)",
               color: "white",
               fontSize: "42px",
             }}
@@ -111,7 +135,6 @@ const Homepage = () => {
             transform: "translateX(-50%)",
             color: "white",
             fontSize: "23px",
-            //   textAlign: "center",
           }}
         >
           With CHOICE, the future of OTT viewing is in your hands. Get ready for
@@ -128,18 +151,26 @@ const Homepage = () => {
         <Box
           style={{
             position: "absolute",
-            top: "73.72%",
-            marginLeft: "200px",
+            top: "76.72%",
+            marginLeft: "250px",
           }}
         >
           <MyCarouselComponent />
         </Box>
-        {/* <div> */}
+
+        <img
+          src={contact_us}
+          alt="pic"
+          style={{
+            width: "100%",
+            marginBottom: "-4px",
+          }}
+        />
         <Typography
           id="Contact"
           style={{
             position: "absolute",
-            top: "89%",
+            top: "90.5%",
             left: "50%",
             transform: "translateX(-50%)",
             color: "white",
@@ -154,46 +185,64 @@ const Homepage = () => {
           alignItems={"center"}
           style={{
             position: "absolute",
-            //   width: "72.36%",
-            top: "90.98%",
+
+            top: "92.5%",
           }}
         >
-          <Box>
-            <img
-              src={ChoiceLogoWithText}
-              alt="pic"
-              style={{ width: "185px", height: "75px", marginLeft: "165px" }}
-            />
-          </Box>
-          <Box>
-            <Typography
-              style={{ marginLeft: "302px", color: "white", fontSize: "20px" }}
-            >
-              Email:
-            </Typography>
-            <Typography
-              style={{ marginLeft: "302px", color: "white", fontSize: "26px" }}
-            >
-              admin@choiceai.in
-            </Typography>
-          </Box>
-          <Box>
-            <Typography
-              style={{ marginLeft: "302px", color: "white", fontSize: "20px" }}
-            >
-              Address:
-            </Typography>
-            <Typography
-              style={{
-                marginLeft: "139px",
-                marginRight: "78px",
-                color: "white",
-                fontSize: "26px",
-              }}
-            >
-              C-9, Market, opposite IIT Delhi Main Road, Block C 5, Safdarjung
-              Development Area, Hauz Khas, New Delhi, Delhi 110016
-            </Typography>
+          <Box
+            style={{
+              display: "flex",
+            }}
+          >
+            <Box>
+              <img
+                src={ChoiceLogoWithText}
+                alt="pic"
+                style={{ width: "185px", height: "75px", marginLeft: "165px" }}
+              />
+            </Box>
+            <Box>
+              <Typography
+                style={{
+                  marginLeft: "302px",
+                  color: "white",
+                  fontSize: "20px",
+                }}
+              >
+                Email:
+              </Typography>
+              <Typography
+                style={{
+                  marginLeft: "302px",
+                  color: "white",
+                  fontSize: "26px",
+                }}
+              >
+                admin@choiceai.in
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                style={{
+                  marginLeft: "140px",
+                  color: "white",
+                  fontSize: "20px",
+                }}
+              >
+                Address:
+              </Typography>
+              <Typography
+                style={{
+                  marginLeft: "139px",
+                  marginRight: "78px",
+                  color: "white",
+                  fontSize: "26px",
+                }}
+              >
+                C-9, Market, opposite IIT Delhi Main Road, Block C 5, Safdarjung
+                Development Area, Hauz Khas, New Delhi, Delhi 110016
+              </Typography>
+            </Box>
           </Box>
         </Box>
       </Box>

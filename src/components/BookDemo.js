@@ -11,12 +11,9 @@ import React from "react";
 const BookDemo = () => {
   return (
     <div>
-      <form
-      //   onSubmit={handleSubmit}
-      >
+      <form>
         <Box
           border={3}
-          //   borderColor={"green"}
           borderRadius={5}
           boxShadow={"10px 10px 20px #ccc"}
           padding={3}
@@ -51,12 +48,9 @@ const BookDemo = () => {
               <TextField
                 name="Title"
                 placeholder="Enter First Name"
-                // onChange={handleChange}
-                // value={inputs.Title}
                 margin="normal"
                 variant="outlined"
                 style={{ width: "400px" }}
-                // width="40%"
               />
             </Box>
             <Box marginLeft={"150px"}>
@@ -68,15 +62,12 @@ const BookDemo = () => {
                   fontWeight: "bold",
                   color: "black",
                 }}
-                //   sx={labelStyle}
               >
                 Last Name
               </InputLabel>
               <TextField
                 name="Description"
                 placeholder="Enter Last Name"
-                // onChange={handleChange}
-                // value={inputs.Description}
                 margin="normal"
                 variant="outlined"
                 style={{ width: "400px" }}
@@ -99,8 +90,6 @@ const BookDemo = () => {
               <TextField
                 name="Description"
                 placeholder="Enter Your Address"
-                // onChange={handleChange}
-                // value={inputs.Description}
                 margin="normal"
                 variant="outlined"
                 style={{ width: "400px" }}
@@ -121,15 +110,12 @@ const BookDemo = () => {
               <TextField
                 name="Description"
                 placeholder="Enter Phone  Number"
-                // onChange={handleChange}
-                // value={inputs.Description}
                 margin="normal"
                 variant="outlined"
                 style={{ width: "400px" }}
               />
             </Box>
           </Box>
-          {/* </Box> */}
           <InputLabel
             sx={{
               mb: 1,
@@ -146,9 +132,6 @@ const BookDemo = () => {
             placeholder="Hi Tanisha! Type your message"
             multiline
             rows={8}
-            // onChange={handleChange}
-            // value={inputs.Description}
-            // margin="normal"
             variant="outlined"
             style={{ width: "1100px" }}
           />

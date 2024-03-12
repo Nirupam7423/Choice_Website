@@ -17,7 +17,6 @@ const home = () => {
           </Routes>
         </main>
       </BrowserRouter>
-      {/* <Homepage /> */}
     </React.Fragment>
   );
 };
