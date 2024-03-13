@@ -1,11 +1,10 @@
 import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import { Box, Button, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Tab, Tabs } from "@mui/material";
 import BookDemo from "./Images/BookDemo.png";
 import ChoiceLogoWithText from "./Images/ChoiceLogoWithText.svg";
 import { Link, useNavigate } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const navigate = useNavigate();

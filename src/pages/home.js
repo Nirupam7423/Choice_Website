@@ -20,5 +20,4 @@ const home = () => {
     </React.Fragment>
   );
 };
-
 export default home;

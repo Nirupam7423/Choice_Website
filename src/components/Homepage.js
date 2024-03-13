@@ -1,5 +1,4 @@
 import React from "react";
-import BackgroundImage from "./Images/BackgroundImage.png";
 import CategorySelection from "./Images/CategorySelection.png";
 import CuratedStream from "./Images/CuratedStream.png";
 import ChoiceLogoWithText from "./Images/ChoiceLogoWithText.svg";
